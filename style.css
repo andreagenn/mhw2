@@ -1,0 +1,95 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:  space-between;
+}
+
+.risposta{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.question-name {
+    background-image: url('./images/background.jpeg');
+    background-size: cover;
+}
+
+@media(max-width: 700px) {
+    article {
+        width: 95%;
+    }
+
+    header div {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .choice-grid .risposta {
+        width: 49%;
+    }
+}
+
+.rispostaSelezionata {
+    background-color: #cfe3ff;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.hidden {
+    display: none;
+}
+
+/* risultato */
+
+#results {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+#title {
+    margin-bottom: 18px;
+}
+
+#paragraph {
+    margin-bottom: 18px;
+}
+
+#button {
+    background-color: #cecece;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: #e0e0e0;
+}
